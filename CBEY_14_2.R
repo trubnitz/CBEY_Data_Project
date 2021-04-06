@@ -20,7 +20,11 @@ datal$Rank <- factor(datal$Rank,
 q <- ggplot(data = datal, aes(x=Rank,y =Students)) +
   geom_bar(stat="identity",fill = "slategray3") +
   theme_bw() +
-  labs(title = "28% of MBA Students Think Environmental Sustainabilty is Extremely Important",
+  labs(title = "28% of MBA Students Think it is Extremely Important for Business Leaders to be Knowledgeable about Environmental Sustainability",
        subtitle = "How important is for business leaders to be knowledgeable about environmental sustainability?",
        caption = "Souce: CBEY")
 q
+
+ggsave("CBEY_14_2_plot.png",
+       plot = last_plot(),
+       dpi = 300)

@@ -18,7 +18,7 @@ datal$Rank <- factor(datal$Rank,
                     levels = c("Extremely", "Very", "Somewhat", "Slightly", "Not at all"))
 
 q <- ggplot(data = datal, aes(x=Rank,y =Students)) +
-  geom_bar(stat="identity",fill = "slategray3") +
+  geom_bar(stat="identity",fill = "midnightblue") +
   theme_bw() +
   labs(title = "70% of MBA Students Think it is Extremely or Very Important for Business Leaders to be Knowledgeable about Environmental Sustainability",
        subtitle = "How important is for business leaders to be knowledgeable about environmental sustainability?",

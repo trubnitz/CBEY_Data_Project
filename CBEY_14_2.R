@@ -35,8 +35,8 @@ r <- ggplot(data = datal, aes(x=Rank,y =Students)) +
   theme_classic() +
   labs(title = "Majority of MBA Students Say Sustainability is Critical to Business Leadership",
        subtitle = "How important is it for business leaders to be knowledgeable about sustainability?",
-       caption = "Source: CBEY GNAM Survey Results 2021",
-       y = "Number of Students", x = "Response") 
+       caption = "Source: CBEY GNAM Survey 2021",
+       y = "# Students", x = NULL) 
 r
 
 ggsave("CBEY_14_2_plot(edit).png",

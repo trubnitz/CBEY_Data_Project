@@ -1,5 +1,5 @@
 library(readxl)
-data <- read_xlsx('/Users/Aavni/Dropbox (Yale_FES)/Siya Test/Data Viz Github/CBEY_Data_Project/WSUMTRUE14_2.xlsx')
+data <- read_xlsx('/Users/celiaristow/Desktop/CBEY_Data_Project/WSUMTRUE14_2.xlsx')
 View(data)
 plot(data)
 library(ggplot2)
@@ -28,6 +28,16 @@ q <- ggplot(data = datal, aes(x=Rank,y =Students)) +
   
 q
 
+#Adding a new plot! - Celia
+
+r <- ggplot(data = datal, aes(x=Rank,y =Students)) +
+  geom_bar(stat="identity",fill = "cornflowerblue") +
+  theme_classic() +
+  labs(title = "Majority of MBA Students Say Business Leaders Must Be Knowledgeable About Sustainability",
+       subtitle = "How important is for business leaders to be knowledgeable about environmental sustainability?",
+       caption = "Source: CBEY GNAM Survey Results 2021",
+       y = "Number of Students", x = "Response") 
+r
 
 ggsave("CBEY_14_2_plot(edit).png",
        plot = last_plot(),

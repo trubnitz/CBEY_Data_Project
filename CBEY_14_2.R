@@ -31,10 +31,10 @@ q
 #Adding a new plot! - Celia
 
 r <- ggplot(data = datal, aes(x=Rank,y =Students)) +
-  geom_bar(stat="identity",fill = "cornflowerblue") +
+  geom_bar(stat="identity",fill = "darkgreen") +
   theme_classic() +
-  labs(title = "Majority of MBA Students Say Business Leaders Must Be Knowledgeable About Sustainability",
-       subtitle = "How important is for business leaders to be knowledgeable about environmental sustainability?",
+  labs(title = "Majority of MBA Students Say Sustainability is Critical to Business Leadership",
+       subtitle = "How important is it for business leaders to be knowledgeable about sustainability?",
        caption = "Source: CBEY GNAM Survey Results 2021",
        y = "Number of Students", x = "Response") 
 r
